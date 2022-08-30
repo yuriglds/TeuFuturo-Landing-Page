@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 50%;
+}
+
+.cpu-video {
+    width: 100%;
+}
+
+h1 {
+    color: #7116F2;
+    border-bottom: 1px solid #7116F2;
+}
+p {
+    color: white;
+}
+
+.container {
+    background-color: black;
+}
+
+footer {
+    background-color: #7116F2;
+    height: 100px;
+    color: white;
+    padding: 5px;
+}
