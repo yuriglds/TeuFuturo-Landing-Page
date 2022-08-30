@@ -5,6 +5,15 @@ body {
 
 .logo {
     width: 50%;
+    
+}
+
+.prodigy-logo{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .cpu-video {
