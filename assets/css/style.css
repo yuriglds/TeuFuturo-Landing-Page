@@ -15,6 +15,11 @@ h1 {
     color: #7116F2;
     border-bottom: 1px solid #7116F2;
 }
+
+.processador-title{
+    text-transform: uppercase;
+}
+
 p {
     color: white;
 }
