@@ -16,6 +16,10 @@ body {
     margin-bottom: 40px;
 }
 
+.prodigy {
+    width: 50%;
+}
+
 .cpu-video {
     width: 100%;
 }
@@ -40,6 +44,10 @@ p {
 footer {
     background-color: #7116F2;
     height: 100px;
-    color: white;
+    color: #c9c9c9;
     padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
 }
