@@ -24,13 +24,10 @@ body {
     width: 100%;
 }
 
-h1 {
+.title-components{
+    text-transform: uppercase;
     color: #7116F2;
     border-bottom: 1px solid #7116F2;
-}
-
-.processador-title{
-    text-transform: uppercase;
 }
 
 p {
