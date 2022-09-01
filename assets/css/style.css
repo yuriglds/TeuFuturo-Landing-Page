@@ -38,11 +38,17 @@ ul > li {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .title-hr {
+=======
+.title-components{
+    text-transform: uppercase;
+>>>>>>> bbd09d50eb5e70e22a2fba641e759789e6f24789
     color: #7116F2;
     border-bottom: 1px solid #7116F2;
 }
 
+<<<<<<< HEAD
 .title {
     text-transform: uppercase;
     font-size: 100px;
@@ -66,6 +72,8 @@ ul > li {
     text-transform: uppercase;
 }
 
+=======
+>>>>>>> bbd09d50eb5e70e22a2fba641e759789e6f24789
 p {
     color: white;
 }
