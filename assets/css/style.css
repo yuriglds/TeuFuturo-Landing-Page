@@ -5,13 +5,11 @@ body {
 
 .logo {
     width: 50%;
-    
 }
 
 .prodigy-logo{
     width: 50%;
     position: relative;
-    left: 25%;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -19,16 +17,51 @@ body {
 .prodigy {
     width: 50%;
 }
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
 
+.nav-btn:hover {
+    color: white;
+    border-bottom: 5px solid rgb(39, 113, 224);
+    transition: 0.3s;
+}
+
+ul > li {
+    margin-top: 15px;
+    display: inline-block;
+}
 .cpu-video {
     width: 100%;
 }
 
-h1 {
+.title-hr {
     color: #7116F2;
     border-bottom: 1px solid #7116F2;
 }
 
+.title {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+
+.lateral-prodigy {
+    position: relative;
+    right: 200px;
+    top: 900px;
+    margin-top: -50%;
+    width: 100px;
+}
 .processador-title{
     text-transform: uppercase;
 }
@@ -37,8 +70,21 @@ p {
     color: white;
 }
 
+span {
+    color: white;
+}
+
 .container {
     background-color: black;
+}
+
+.inicio {
+    padding: 20px;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    width: auto;
+    height: 20%;
 }
 
 footer {

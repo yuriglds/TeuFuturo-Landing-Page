@@ -8,59 +8,76 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>LP</title>
+    <title>Prodigy</title>
   </head>
   <body style="background-color: black;">
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="assets/img/razor_logo.png" alt="logotipo" class="d-inline-block align-text-top logo">
           </a>
+          <ul>
+            <li>
+              <a class="fw-bold nav-btn" href="">Produto</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="">Especs</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="">Contato</a>
+            </li>
+          </ul>
         </div>
       </nav>
     <main id="main">
-      <div>
-        <img src="assets/img/logo.png" class="prodigy-logo">
+      <div class="inicio">
+        <!--<img src="assets/img/logo.png" class="prodigy-logo" alt="">-->
+        <!--<img src="assets/img/pc.gif" alt="">-->
       </div>
-      
       <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <video autoplay loop muted playsinline class="cpu-video">
-                    <source src="https://workstation.razor.com.br/wp-content/uploads/2021/05/video-processador.mp4" type="video/mp4">
-                </video>
+        <img src="assets/img/prodigy-logo.svg" class="lateral-prodigy" alt="">
+        <section id="prodigy">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h1 class="featurette-heading fw-normal fw-bold lh-1 title">Prodigy</h1>
+              <h2 class="featurette-heading fw-normal fw-bold lh-1 sub-title">Dê o Melhor</h2>
+              <span class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</span>
             </div>
-            <div class="col-6">
-                <h1 class="processador-title">Processador</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed earum odio iure non laboriosam nemo ipsam tempora sapiente unde, placeat totam veritatis corrupti dolore excepturi tempore perferendis nobis dolores accusamus?</p>
+            <div class="col-md-5">
+              <img src="assets/img/img4.png" alt="">
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-6">
-                <h1>RTX 3090</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed earum odio iure non laboriosam nemo ipsam tempora sapiente unde, placeat totam veritatis corrupti dolore excepturi tempore perferendis nobis dolores accusamus?</p>
+          </div>
+        </section>
+        <hr class="featurette-divider">
+        <section id="cpu">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">Processador</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
             </div>
-            <div class="col-6">
-                <video autoplay loop muted playsinline class="cpu-video">
-                    <source src="https://workstation.razor.com.br/wp-content/uploads/2021/05/video-placadevideo.mp4" type="video/mp4">
-                </video>
+            <div class="col-md-5">
+              <img src="assets/img/cpu.png" alt="">
             </div>
-        </div>
+          </div>
+        </section>
+          <hr class="featurette-divider">
+        <section id="gpu">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">RTX 3090</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="assets/img/gpu.png" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
     </main>
-    
     <footer>
-        #TeuFuturo 
+      
     </footer>
   </body>
 </html>
