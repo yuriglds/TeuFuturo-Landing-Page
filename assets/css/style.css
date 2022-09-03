@@ -34,6 +34,11 @@ ul > li {
     margin-top: 15px;
     display: inline-block;
 }
+
+#prodigy-title{
+    margin-top: 50px;
+}
+
 .cpu-video {
     width: 100%;
 }
@@ -59,7 +64,7 @@ ul > li {
     position: absolute;
     left: 10px;
     width: 70px;
-    top: 200px;
+    top: 125px;
 }
 .processador-title{
     text-transform: uppercase;
@@ -88,6 +93,7 @@ span {
 
 footer {
     background-color: #7116F2;
+    width: 100%;
     height: 100px;
     color: #c9c9c9;
     padding: 5px;
