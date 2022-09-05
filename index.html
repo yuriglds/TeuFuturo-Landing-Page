@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Prodigy</title>
   </head>
   <body style="background-color: black;">
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/img/razor_logo.png" alt="logotipo" class="d-inline-block align-text-top logo">
           </a>
           <ul>
             <li>
-              <a class="fw-bold nav-btn" href="">Produto</a>
+              <a class="fw-bold nav-btn" href="#produto">Produto</a>
             </li>
             <li>
-              <a class="fw-bold nav-btn" href="">Especs</a>
+              <a class="fw-bold nav-btn" href="#specs">Especs</a>
             </li>
             <li>
-              <a class="fw-bold nav-btn" href="#box-formulario">Contato</a>
+              <a class="fw-bold nav-btn" href="#formulario">Contato</a>
             </li>
           </ul>
         </div>
@@ -50,10 +51,10 @@
           </div>
         </section>
         <hr class="featurette-divider">
-        <section id="cpu">
+        <section id="cpu" class="anime">
           <div class="row featurette">
             <div class="col-md-7">
-              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">Processador</h2>
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">Processador</h1>
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
             </div>
             <div class="col-md-5">
@@ -62,10 +63,10 @@
           </div>
         </section>
           <hr class="featurette-divider">
-        <section id="gpu">
+        <section id="gpu" class="anime">
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">RTX 3090</h2>
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">RTX 3090</h1>
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -75,7 +76,7 @@
         </section>
       </div>
     </div>
-    <section id="contato">
+    <section id="formulario" class="anime">
       <div class="row featurette">
         <div class="col">
           <div id="box-formulario">
@@ -109,6 +110,8 @@
     
   </main>
 
+  <script src="assets/js/animation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <footer>

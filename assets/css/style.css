@@ -3,6 +3,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  :target {
+    scroll-margin-top: .8em;
+  }
+
 .logo {
     width: 50%;
 }
@@ -102,3 +112,18 @@ footer {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
+
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+#menu{
+    transition: .5s;
+ }
