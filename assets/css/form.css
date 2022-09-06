@@ -1,32 +1,19 @@
-#box-formulario {
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    }
-
 form {
-    font-size: 80%;
-    width: 40vw;
+    transform: scale(0.9);
+    width: 40em;
     border: #7116F2 solid;
-    display: inline-block;
-    color: white;
-    padding: 20px 20px;
-    position: absolute;
     border-radius: 20px;
-	margin: 0px 40x;
-    transition: 1s;
+    position: relative;
+    display: block;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    color: #ffffff;
 
 }
 
 
 form:hover{
-    transform: scale(1.01);
     border: blue solid;
 }
 
@@ -37,6 +24,7 @@ form label, form legend {
 }
 
 .input-padrao {
+    border-radius: 25px;
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
@@ -49,7 +37,7 @@ form label, form legend {
 
 .enviar{
 	padding: 15px 0px;
-	width: 25vw;
+	width: 80%;
     position:relative;
     display: flex;
     justify-content: center;
@@ -66,4 +54,10 @@ form label, form legend {
 .enviar:hover{
 	transform: scale(1.01);
 	background-color: red;
+}
+
+@media (max-width: 600px){
+    form {
+        width: 20em;
+    }
 }
