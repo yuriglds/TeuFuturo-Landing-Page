@@ -1,13 +1,7 @@
-
-@media (prefers-reduced-motion: no-preference) {
-    html {
-      scroll-behavior: smooth;
-    }
-  }
-  
-  :target {
-    scroll-margin-top: .8em;
-  }
+.body{
+    background-image: url(/assets/img/background-temp.webp);
+    background-attachment: fixed;
+}
 
 .logo {
     width: 50%;
@@ -100,19 +94,6 @@ span {
     height: 20%;
 }
 
-footer {
-    background-color: #7116F2;
-    height: 300px;
-    width: 100%;
-    color: #c9c9c9;
-    bottom: 0;
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-}
-
 .anime {
     opacity: 0;
     transform: translate3d(-100px,0,0);
@@ -152,10 +133,71 @@ footer {
     transition: .5s;
  }
 
- @media (max-width: 1500px) {
+ .processador-title{
+    padding-top: 1em;
+    text-transform: uppercase;
+    color: #7116F2;
+}
+
+.div-list{
+    left: 10em;
+    width: 70%;
+    
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+ }
+
+.list{
+    position: relative;
+    display: inline-block;
+    color: white;
+ }
+
+.list-itens{
+    margin-top: 5em;
+    border: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: #7116F2 solid;
+    
+ }
+
+.list-itens:hover{
+    border-bottom: blue solid;
+
+ }
+
+.esconder{
+    margin: 0 auto;
+    display: none;
+    width: 70%;
+    padding-bottom: 5em;
+    
+ }
+
+.esconder img{
+    width: 35%;
+	padding-top: 3em;
+    margin-bottom: 2em;
+	float: left;
+}
+
+ @media (max-width: 1280px) {
     .lateral-prodigy {
         display: none;
     }
  }
 
- 
+ @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  :target {
+    scroll-margin-top: .8em;
+  }

@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script defer src="/assets/js/hide-div.js"></script>
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Prodigy</title>
+    <title>Prodigy - Razor</title>
   </head>
-  <body>
+  <body class="body">
     <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -92,6 +93,7 @@
         </div>
       </div>
       <!-- Modal -->
+      <!--
         </section>
         <hr class="featurette-divider">
         <section id="cpu" class="anime">
@@ -117,7 +119,26 @@
             </div>
           </div>
         </section>
-          <hr class="featurette-divider">
+        -->
+        <div class="div-list">
+          <button class="list-itens" id="list-itens" >Processador</button>
+          <button class="list-itens" id="list-itens2" >Placa de Video</button>
+          <button class="list-itens" id="list-itens" >Processador</button>
+          <button class="list-itens" id="list-itens" >Processador</button>
+      </div>
+      <div id="esconder" class="esconder">
+        <img src="assets/img/cpu.png" alt="">
+        <h1 class="processador-title">Processador</h1>
+          <div class = 'paragrafo'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+          </div>  
+      </div>
+      <div id="esconder-rtx" class="esconder">
+        <img src="assets/img/gpu.png" alt="">
+        <h1 class="processador-title">RTX 3090</h1>
+        <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+      </div>
+        <hr class="featurette-divider">
         <section id="specs" class="anime">
           
         </section>
@@ -162,7 +183,19 @@
 
   <section id="about">
     <footer>
-      
+      <div>
+        <p>Iniciativa:</p>
+        <a href="https://teufuturo.io/"><img class="img-iniciativa" src="assets/img/TeuFuturo.png" alt="logo teu futuro"></a>
+        <a href="https://razor.com.br/"><img class="img-iniciativa" src="assets/img/logo-razor.png" alt="logo teu futuro"></a>
+      </div>
+      <div>
+        <p>Equipe:</p>
+        <img class="img-profile" src="assets/img/gabriel-profile.jpeg" alt="">
+        <img class="img-profile" src="assets/img/yuri-profile.jpeg" alt="">
+        <img class="img-profile" src="assets/img/lucas-profile.png" alt="">
+        <img class="img-profile" src="assets/img/rodrigo-profile.png" alt="">
+        <img class="img-profile" src="assets/img/clarissa-profile.jpeg" alt="">
+      </div>
     </footer>
   </section>
    
