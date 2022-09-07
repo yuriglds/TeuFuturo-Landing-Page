@@ -142,7 +142,8 @@ span {
 .div-list{
     left: 10em;
     width: 70%;
-    
+    top: 10em;
+    padding-bottom: 10em;
     position: relative;
     margin: 0 auto;
     display: inline-block;
