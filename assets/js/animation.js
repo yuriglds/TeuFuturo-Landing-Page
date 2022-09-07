@@ -1,8 +1,8 @@
-/* transition */
+/* transition menu */
 $('nav a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top,
+        targetOffset = $(id).offset().top(),
         menuHeight = $('nav').innerHeight();
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
@@ -10,9 +10,8 @@ $('nav a').click(function(e){
     
 });
 
-/* transition */
+/* transition menu */
 (function () {
-    var time = 3000;
     var menu = document.getElementById('menu');
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
@@ -26,7 +25,7 @@ $('nav a').click(function(e){
     });
 })();
 
-/* transition */
+/* transition animation*/
 debounce = function(func, wait, immediate) {
     var timeout;
     return function() {
@@ -42,7 +41,7 @@ debounce = function(func, wait, immediate) {
     };
 };
 
-/* transition */
+/* transition animation */
 (function() { 
 var $target = $('.anime'),
     animationClass = 'anime-start',

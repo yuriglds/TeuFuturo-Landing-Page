@@ -1,69 +1,15 @@
-#box-formulario {
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    }
+label {
+    color: black;
+}
 
 form {
-    font-size: 80%;
-    width: 40vw;
-    border: #7116F2 solid;
-    display: inline-block;
     color: white;
-    padding: 20px 20px;
-    position: absolute;
-    border-radius: 20px;
-	margin: 0px 40x;
-    transition: 1s;
+    background-color: rgb(255, 255, 255, .1);
+    padding: 5px;
 
 }
 
-
-form:hover{
-    transform: scale(1.01);
-    border: blue solid;
+input[type=email], input[type=text], input[type=tel] {
+    border-color: #7116F2;
 }
 
-form label, form legend {
-	display:block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-
-.input-padrao {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 100%;
-}
-
-.checkbox {
-	margin: 20px 0;
-}
-
-.enviar{
-	padding: 15px 0px;
-	width: 25vw;
-    position:relative;
-    display: flex;
-    justify-content: center;
-	background-color: #7116F2;
-	color: white;
-	font-weight: bold;
-
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-}
-
-.enviar:hover{
-	transform: scale(1.01);
-	background-color: red;
-}

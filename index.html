@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Prodigy</title>
   </head>
-  <body style="background-color: black;">
+  <body>
     <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -26,7 +28,10 @@
               <a class="fw-bold nav-btn" href="#specs">Especs</a>
             </li>
             <li>
-              <a class="fw-bold nav-btn" href="#formulario">Contato</a>
+              <a class="fw-bold nav-btn" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="fw-bold nav-btn" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contato</a>
             </li>
           </ul>
         </div>
@@ -49,6 +54,44 @@
               <img src="assets/img/img4.png" alt="">
             </div>
           </div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr" id="staticBackdropLabel">Contato</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Yuri Gabriel">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@domain.com">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="+55 (51) 9999-9999">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">receber e-mails</label>
+                </div>
+                <!--<button type="submit" class="btn btn-outline-primary">Enviar</button>-->
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-outline-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
         </section>
         <hr class="featurette-divider">
         <section id="cpu" class="anime">
@@ -58,7 +101,7 @@
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
             </div>
             <div class="col-md-5">
-              <img src="assets/img/cpu.png" alt="">
+              <img src="assets/img/cpu.png" alt="Processador">
             </div>
           </div>
         </section>
@@ -74,48 +117,54 @@
             </div>
           </div>
         </section>
-      </div>
-    </div>
-    <section id="formulario" class="anime">
-      <div class="row featurette">
-        <div class="col">
-          <div id="box-formulario">
-            <form>
-              <label for="nomesobrenome">Nome e sobrenome</label>
-              <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Ex: João da Silva">
-      
-              <label for="email">Email</label>
-              <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
-      
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-      
-              <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-                
-                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-                
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-              </fieldset>
-      
-              <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-      
-              <input type="submit" value="Solicitar Orçamento" class="enviar">
-            </form>
+          <hr class="featurette-divider">
+        <section id="specs" class="anime">
+          
+        </section>
+          <hr class="featurette-divider">
+        <!--
+        <section id="formulario" class="anime">
+          <div class="row featurette ">
+            <div class="col-md-5 order-md-1">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Yuri Gabriel">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@domain.com">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="+55 (51) 9999-9999">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Enviar</button>
+              </form>
+            </div>
+            <div class="col-md-5 order-md-2">
+              <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">Contato</h1>
+            </div>
           </div>
-        </div>
+        </section>
+        -->  
+        <hr class="featurette-divider">
       </div>
-    </section>
-    
   </main>
-
   <script src="assets/js/animation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  <section id="about">
     <footer>
       
     </footer>
+  </section>
+   
   </body>
 </html>
