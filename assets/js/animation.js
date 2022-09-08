@@ -10,6 +10,7 @@ $('nav a').click(function(e){
     
 });
 
+
 /* fix top padding */
 window.addEventListener('resize', () => {
     var tela = document.getElementById('topo');    

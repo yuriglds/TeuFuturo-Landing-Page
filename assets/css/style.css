@@ -56,12 +56,18 @@ h5 {
     text-transform: uppercase;
     font-size: 150px;
     color: white;
+    background: -webkit-linear-gradient(#2771e0, #7116F2,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sub-title {
     text-transform: uppercase;
     font-size: 75px;
     color: white;
+    background: -webkit-linear-gradient(#2771e0, #7116F2,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lateral-prodigy {
@@ -158,7 +164,7 @@ span {
  }
 
 .list-itens:hover{
-    border-bottom: solid rgb(39, 113, 224);
+    border-bottom: solid #2771e0;
     transition: 0.5s;
 
  }
