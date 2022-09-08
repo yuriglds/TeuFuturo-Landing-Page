@@ -54,7 +54,8 @@
             <div class="col-md-5">
               <img src="assets/img/img4.png" alt="">
             </div>
-          </div>
+        </div>
+      </div>
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -67,31 +68,32 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Yuri Gabriel">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Fernando Posser">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">E-Mail</label>
                   <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@domain.com">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text">Digite seu melhor e-mail!</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
-                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="+55 (51) 9999-9999">
+                  <label for="exampleInputPassword1" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Ex: +55 (51) 9999-9999">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">receber e-mails</label>
+                  <label class="form-check-label" for="exampleCheck1" >Aceito receber novidades por e-mail</label>
                 </div>
                 <!--<button type="submit" class="btn btn-outline-primary">Enviar</button>-->
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-outline-primary">Enviar</button>
+              <button type="button" class="btn btn-outline-primary">Solicitar Orçamento</button>
             </div>
           </div>
         </div>
       </div>
+      <div>
       <!-- Modal -->
       <!--
         </section>
@@ -120,29 +122,41 @@
           </div>
         </section>
         -->
-        <div class="div-list">
-          <button class="list-itens" id="list-itens" >Processador</button>
-          <button class="list-itens" id="list-itens2" >Placa de Video</button>
-          <button class="list-itens" id="list-itens" >Processador</button>
-          <button class="list-itens" id="list-itens" >Processador</button>
       </div>
-      <div id="esconder" class="esconder">
-        <img src="assets/img/cpu.png" alt="">
-        <h1 class="processador-title">Processador</h1>
-          <div class = 'paragrafo'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
-          </div>  
-      </div>
-      <div id="esconder-rtx" class="esconder">
-        <img src="assets/img/gpu.png" alt="">
-        <h1 class="processador-title">RTX 3090</h1>
-        <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
-      </div>
+        <div class="div-button">
+          <button id="list-itens1" >Processador</button>
+          <button id="list-itens2" >Placa de Video</button>
+          <button id="list-itens3" >Gabinete</button>
+          <button id="list-itens4" >Processador</button>
+        </div>
+
         <hr class="featurette-divider">
         <section id="specs" class="anime">
         </section>
         <hr class="featurette-divider">
+  
+
+      <div id="hide-iten1" class="hide-div">
+        <img src="assets/img/cpu.png" alt="Imagem Processador">
+        <h1 class="parts-title">Processador</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
       </div>
+      <div id="hide-iten2" class="hide-div">
+        <img src="assets/img/gpu.png" alt="Imagem GPU">
+        <h1 class="parts-title">RTX 3090</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+      </div>
+      <div id="hide-iten3" class="hide-div">
+        <img src="assets/img/cpu.png" alt="Imagem Processador">
+        <h1 class="parts-title">Gabinete</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+      </div>
+      <div id="hide-iten4" class="hide-div">
+        <img src="assets/img/cpu.png" alt="Imagem Processador">
+        <h1 class="parts-title">Gabinete2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+      </div>
+ 
   </main>
   <script src="assets/js/animation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -150,7 +164,7 @@
 
   <section id="about">
     <footer>
-      <div>
+      <div class="iniciativa">
         <p>Iniciativa:</p>
         <a href="https://teufuturo.io/" target="_blank"><img class="img-iniciativa" src="assets/img/TeuFuturo.png" alt="logo teu futuro"></a>
         <a href="https://razor.com.br/" target="_blank"><img class="img-iniciativa" src="assets/img/logo-razor.png" alt="logo teu futuro"></a>

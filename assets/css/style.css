@@ -133,46 +133,43 @@ span {
     transition: .5s;
  }
 
- .processador-title{
+/*CENTRAL MENU>*/
+ .parts-title{
     padding-top: 1em;
     text-transform: uppercase;
     color: #7116F2;
 }
 
-.div-list{
-    left: 10em;
+.div-button{
+    vertical-align: top;
     width: 70%;
     top: 10em;
-    padding-bottom: 10em;
+    bottom: 10em;
     position: relative;
     margin: 0 auto;
-    display: inline-block;
+    display: flex;
  }
 
-.list{
-    position: relative;
-    display: inline-block;
-    color: white;
- }
-
-.list-itens{
+.div-button button{
     margin-top: 5em;
     border: none;
     display: inline-block;
     position: relative;
+    margin-bottom: 10em;
     margin-left: 10%;
     background-color: transparent;
-    color: aliceblue;
+    color: white;
     border-bottom: #7116F2 solid;
     
  }
 
-.list-itens:hover{
+.div-button button:hover{
     border-bottom: blue solid;
 
  }
 
-.esconder{
+.hide-div{
+    padding-top: 1em;
     margin: 0 auto;
     display: none;
     width: 70%;
@@ -180,25 +177,35 @@ span {
     
  }
 
-.esconder img{
+.hide-div img{
     width: 35%;
-	padding-top: 3em;
+	padding-top: 2em;
     margin-bottom: 2em;
 	float: left;
 }
 
- @media (max-width: 1280px) {
+@media (max-width: 1155px){
+    .div-button button{
+        padding-right: 100px;
+        font-size: 18px;
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
     .lateral-prodigy {
         display: none;
     }
  }
 
- @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
     }
   }
   
-  :target {
+:target {
     scroll-margin-top: .8em;
   }
