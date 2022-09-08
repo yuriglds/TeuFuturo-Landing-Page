@@ -2,7 +2,7 @@
 $('nav a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top(),
+        targetOffset = $(id).offset().top,
         menuHeight = $('nav').innerHeight();
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
@@ -10,6 +10,18 @@ $('nav a').click(function(e){
     
 });
 
+/* fix top padding */
+window.addEventListener('resize', () => {
+    var tela = document.getElementById('topo');    
+        var width = window.innerWidth;
+            if(width > 1280) {
+                tela.classList.remove('inicio');
+            } else {
+                tela.classList.add('inicio');
+            }
+});
+    
+    
 /* transition menu */
 (function () {
     var menu = document.getElementById('menu');
@@ -49,7 +61,6 @@ var $target = $('.anime'),
 
 function animeScroll() {
     var documentTop = $(document).scrollTop();
-    console.log(documentTop);
 
     $target.each(function(){
         var itemTop = $(this).offset().top;
@@ -67,3 +78,4 @@ $(document).scroll(debounce(function(){
     animeScroll();
 },200))
 }());
+

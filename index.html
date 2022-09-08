@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <script defer src="/assets/js/hide-div.js"></script>
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Prodigy - Razor</title>
   </head>
   <body class="body">
+    <div id="topo" class=""></div>
     <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -38,10 +38,19 @@
         </div>
       </nav>
     <main id="main">
-      <div class="inicio">
-        <!--<img src="assets/img/logo.png" class="prodigy-logo" alt="">-->
-        <!--<img src="assets/img/pc.gif" alt="">-->
+     <div class="hide-mob">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/c1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+             <h1>Prodigy</h1>
+             <p>sim é um pc</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
       <div class="container">
         <img src="assets/img/prodigy-logo.svg" class="lateral-prodigy" alt="">
         <section id="prodigy">
@@ -52,7 +61,7 @@
               <span class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</span>
             </div>
             <div class="col-md-5">
-              <img src="assets/img/img4.png" alt="">
+              <img src="assets/img/img4.png" alt="Prodigy" class="mob">
             </div>
           </div>
       <!-- Modal -->
@@ -93,17 +102,17 @@
         </div>
       </div>
       <!-- Modal -->
-      <!--
+      
         </section>
         <hr class="featurette-divider">
         <section id="cpu" class="anime">
           <div class="row featurette">
             <div class="col-md-7">
               <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">Processador</h1>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+              <p class="lead">Conquiste mais desempenho em seus projetos com um processador Intel® Core™ i5 de 12ª geração. São 10 Núcleos e 16 Threads, 3.7GHz - turbo até 4.9GHz - e cache de 20MB, ideal para quem busca mais performance no dia-a-dia.</p>
             </div>
             <div class="col-md-5">
-              <img src="assets/img/cpu.png" alt="Processador">
+              <img src="assets/img/cpu.png" alt="Processador" class="mob">
             </div>
           </div>
         </section>
@@ -115,22 +124,24 @@
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
             </div>
             <div class="col-md-5 order-md-1">
-              <img src="assets/img/gpu.png" alt="">
+              <img src="assets/img/gpu.png" alt="GPU" class="mob">
             </div>
           </div>
         </section>
-        -->
-        <div class="div-list">
-          <button class="list-itens" id="list-itens" >Processador</button>
-          <button class="list-itens" id="list-itens2" >Placa de Video</button>
-          <button class="list-itens" id="list-itens" >Processador</button>
-          <button class="list-itens" id="list-itens" >Processador</button>
-      </div>
+        
+        <section id="specs" class="anime">
+          <div class="row featurette">
+            <div class="col">
+              <button class="list-itens" id="list-itens" >Processador</button>
+              <button class="list-itens" id="list-itens2" >Placa de Video</button>
+              <button class="list-itens" id="list-itens" >Processador</button>
+              <button class="list-itens" id="list-itens" >Processador</button>
+            </div>
       <div id="esconder" class="esconder">
         <img src="assets/img/cpu.png" alt="">
-        <h1 class="processador-title">Processador</h1>
-          <div class = 'paragrafo'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+        <h1 class="processador-title">Intel® Core™ i5-12600KF</h1>
+          <div class="paragrafo">
+            <p class="lead">Conquiste mais desempenho em seus projetos com um processador Intel® Core™ i5 de 12ª geração. São 10 Núcleos e 16 Threads, 3.7GHz - turbo até 4.9GHz - e cache de 20MB, ideal para quem busca mais performance no dia-a-dia.</p>
           </div>  
       </div>
       <div id="esconder-rtx" class="esconder">
@@ -138,16 +149,15 @@
         <h1 class="processador-title">RTX 3090</h1>
         <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
       </div>
-        <hr class="featurette-divider">
-        <section id="specs" class="anime">
         </section>
         <hr class="featurette-divider">
       </div>
+    </div>
   </main>
   <script src="assets/js/animation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <script src="assets/js/hide-div.js"></script>
   <section id="about">
     <footer>
       <div>
