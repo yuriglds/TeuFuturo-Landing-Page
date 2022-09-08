@@ -30,6 +30,7 @@ nav {
     transition: 0.3s;
 }
 
+
 ul > li {
     margin-top: 15px;
     display: inline-block;
@@ -53,13 +54,13 @@ h5 {
 }
 .title {
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 150px;
     color: white;
 }
 
 .sub-title {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 75px;
     color: white;
 }
 
@@ -131,7 +132,8 @@ span {
     transition: .5s;
  }
 
- .processador-title{
+/*CENTRAL MENU>*/
+ .parts-title{
     padding-top: 1em;
     text-transform: uppercase;
     color: #7116F2;
@@ -142,11 +144,17 @@ span {
     border: none;
     display: inline-block;
     position: relative;
+    margin-bottom: 10em;
     margin-left: 10%;
     background-color: transparent;
-    color: aliceblue;
+    color: white;
     border-bottom: #7116F2 solid;
     
+ }
+
+ .video-bg {
+    width: 100%;
+
  }
 
 .list-itens:hover{
@@ -155,7 +163,8 @@ span {
 
  }
 
-.esconder{
+.hide-div{
+    padding-top: 1em;
     margin: 0 auto;
     display: none;
     width: 70%;
@@ -163,20 +172,30 @@ span {
     
  }
 
-.esconder img{
+.hide-div img{
     width: 35%;
-	padding-top: 3em;
+	padding-top: 2em;
     margin-bottom: 2em;
 	float: left;
 }
 
- @media (max-width: 1280px) {
+@media (max-width: 1155px){
+    .div-button button{
+        padding-right: 100px;
+        font-size: 18px;
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
     .lateral-prodigy {
         display: none;
     }
  }
 
- @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
     }
@@ -194,7 +213,28 @@ span {
       top: 200px;
     }
   }
+
+  @media (max-width: 1280px) {
+    .title {
+        text-transform: uppercase;
+        font-size: 80px;
+        color: white;
+    }
+    .sub-title {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: white;
+    }
+  }
+
   
-  :target {
+:target {
     scroll-margin-top: .8em;
+  }
+
+.lista {
+    color: white;
+    font-size: 20px;
+    counter-reset: item;
+    list-style-type: none;
   }

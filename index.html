@@ -63,7 +63,6 @@
             <div class="col-md-5">
               <img src="assets/img/img4.png" alt="Prodigy" class="mob">
             </div>
-          </div>
       <!-- Modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -76,31 +75,32 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Yuri Gabriel">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Fernando Posser">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">E-Mail</label>
                   <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@domain.com">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text">Digite seu melhor e-mail!</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
-                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="+55 (51) 9999-9999">
+                  <label for="exampleInputPassword1" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Ex: +55 (51) 9999-9999">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">receber e-mails</label>
+                  <label class="form-check-label" for="exampleCheck1" >Aceito receber novidades por e-mail</label>
                 </div>
                 <!--<button type="submit" class="btn btn-outline-primary">Enviar</button>-->
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-outline-primary">Enviar</button>
+              <button type="button" class="btn btn-outline-primary">Solicitar Orçamento</button>
             </div>
           </div>
         </div>
       </div>
+      <div>
       <!-- Modal -->
       
         </section>
@@ -121,38 +121,84 @@
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
               <h1 class="featurette-heading fw-normal lh-1 processador-title title-hr">RTX 3090</h1>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+              <p class="lead">As placas de vídeo GeForce RTX™ Série 30 oferecem máximo desempenho para gamers e criadores. Elas contam com a tecnologia Ampere—a 2ª geração da arquitetura RTX da NVIDIA— com novos RT Cores, Tensor Cores e multiprocessadores de streaming para oferecer os gráficos com Ray Tracing mais realistas e recursos de AI de ponta.</p>
             </div>
             <div class="col-md-5 order-md-1">
               <img src="assets/img/gpu.png" alt="GPU" class="mob">
             </div>
           </div>
         </section>
-        
+        <hr class="featurette-divider">
         <section id="specs" class="anime">
           <div class="row featurette">
             <div class="col">
-              <button class="list-itens" id="list-itens" >Processador</button>
+              <button class="list-itens" id="list-itens1" >Processador</button>
               <button class="list-itens" id="list-itens2" >Placa de Video</button>
-              <button class="list-itens" id="list-itens" >Processador</button>
-              <button class="list-itens" id="list-itens" >Processador</button>
+              <button class="list-itens" id="list-itens3" >SSD</button>
+              <button class="list-itens" id="list-itens4" >Memoria RAM</button>
             </div>
-      <div id="esconder" class="esconder">
-        <img src="assets/img/cpu.png" alt="">
-        <h1 class="processador-title">Intel® Core™ i5-12600KF</h1>
-          <div class="paragrafo">
-            <p class="lead">Conquiste mais desempenho em seus projetos com um processador Intel® Core™ i5 de 12ª geração. São 10 Núcleos e 16 Threads, 3.7GHz - turbo até 4.9GHz - e cache de 20MB, ideal para quem busca mais performance no dia-a-dia.</p>
-          </div>  
       </div>
-      <div id="esconder-rtx" class="esconder">
-        <img src="assets/img/gpu.png" alt="">
-        <h1 class="processador-title">RTX 3090</h1>
-        <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque et error fugit, delectus quasi magnam obcaecati eius nisi exercitationem doloremque sequi ad! Delectus dolores laborum nihil porro unde fugit?</p>
+      <div id="hide-iten1" class="hide-div">
+        <img src="assets/img/cpu.png" alt="Imagem Processador">
+        <h1 class="parts-title">Intel® Core™ i5-12600KF</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>Threads: 16</li>
+            <li>Nucleos: 10</li>
+            <li>Frequencia: 3.7GHz - até 4.9GHz</li>
+            <li>Cache: 20MB</li>
+          </ol>
+        </p>
       </div>
-        </section>
-        <hr class="featurette-divider">
+      <div id="hide-iten2" class="hide-div">
+        <img src="assets/img/gpu.png" alt="Imagem GPU">
+        <h1 class="parts-title">RTX 3060</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <!--<li>Nvidia® Geforce™ GTX 1650 4GB 896 cuda cores</li>
+            <li>Nvidia® Geforce™ GTX 1660 Super 6GB 1408 cuda cores</li>
+            <li>Nvidia® Geforce™ RTX 3050 8GB 2560 cuda cores</li>-->
+            <li>Nvidia® Geforce™ RTX 3060 12GB</li>
+            <li>Cuda cores: 3584 cuda cores</li>
+            <li>Tipo de memoria: GDDR6X</li>
+            <li>Memoria: 4GB até 12GB</li>
+          </ol>
+        </p>
       </div>
-    </div>
+      <div id="hide-iten3" class="hide-div">
+        <img src="assets/img/ssd.png" alt="Imagem SSD">
+        <h1 class="parts-title">SSD M.2 PCIe X4 NVMe</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>Velocidade de leitura: Até 1700 MB/s</li>
+            <li>Velocidade de gravação: Até 1100 MB/s</li>
+            <li>Temperatura: -40 ° C a 85 ° C</li>
+            <li>Dimensões: 80 x 22 x 2,3 mm</li>
+          </ol>
+        </p>
+      </div>
+      <div id="hide-iten4" class="hide-div">
+        <img src="assets/img/ram.png" alt="Imagem ram">
+        <h1 class="parts-title">DDR4 3200MHz 16GB</h1>
+        <p class="lead">
+          <ol class="lista fw-bold">
+            <li>16GB DDR4 3200MHz NON-ECC (1x16GB)</li>
+            <li>32GB DDR4 3200MHz NON-ECC (2x16GB)</li>
+            <li>64GB DDR4 3200MHz NON-ECC (4x16GB)</li>
+            <li>Dimensões: </li>
+          </ol>
+        </p>
+      </div>
+    </section>
+    <hr class="featurette-divider">
+    <section id="dica" class="anime">
+      <div class="row featurette">
+        <div class="col">
+          
+        </div>
+      </div>
+    </section>
+  </div>
   </main>
   <script src="assets/js/animation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -160,7 +206,7 @@
   <script src="assets/js/hide-div.js"></script>
   <section id="about">
     <footer>
-      <div>
+      <div class="iniciativa">
         <p>Iniciativa:</p>
         <a href="https://teufuturo.io/" target="_blank"><img class="img-iniciativa" src="assets/img/TeuFuturo.png" alt="logo teu futuro"></a>
         <a href="https://razor.com.br/" target="_blank"><img class="img-iniciativa" src="assets/img/logo-razor.png" alt="logo teu futuro"></a>
