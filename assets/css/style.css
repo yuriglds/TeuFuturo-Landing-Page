@@ -178,11 +178,29 @@ span {
     
  }
 
+ .show-div{
+    padding-top: 1em;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 5em;
+    
+ }
+ .show-div img{
+    width: 35%;
+	padding-top: 2em;
+    margin-bottom: 2em;
+	float: left;
+}
+
 .hide-div img{
     width: 35%;
 	padding-top: 2em;
     margin-bottom: 2em;
 	float: left;
+}
+
+.bg-video {
+    width: 100%;
 }
 
 @media (max-width: 1155px){

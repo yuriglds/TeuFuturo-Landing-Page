@@ -1,78 +1,15 @@
-let btn = document.querySelector('#list-itens1');
-let div = document.querySelector('#hide-iten1')
+let btns = document.querySelectorAll(".list-itens");
+let divs = document.querySelectorAll(".hide-div");
 
-btn.addEventListener('click', function(){
-    if(div.style.display === 'block'){
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-    }else{
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'none' 
-        div.style.display = 'block'
-        
-        
-  
-    }
+divs[0].style.display = "block";
 
-})
-
-let btn2 = document.querySelector('#list-itens2');
-let div2 = document.querySelector('#hide-iten2')
-
-btn2.addEventListener('click', function(){
-    if(div2.style.display === 'block'){
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-    }else{
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'block'
-        div.style.display = 'none'
-        
-    }
-})
-
-let btn3 = document.querySelector('#list-itens3');
-let div3 = document.querySelector('#hide-iten3');
-
-btn3.addEventListener('click', function(){
-    if(div3.style.display === 'block'){
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-
-    }else{
-        div4.style.display = 'none'
-        div3.style.display = 'block'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-     
-        
-    }
-})
-
-let btn4 = document.querySelector('#list-itens4');
-let div4 = document.querySelector('#hide-iten4');
-
-btn4.addEventListener('click', function(){
-    if(div4.style.display === 'block'){
-        div4.style.display = 'none'
-        div3.style.display = 'none'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-
-    }else{
-        div4.style.display = 'block'
-        div3.style.display = 'none'
-        div2.style.display = 'none'
-        div.style.display = 'none'
-     
-        
-    }
-})
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(index) {
+        for (let j = 0; j < divs.length; j++) {
+            if (j == index) 
+                divs[j].style.display = "block";
+            else
+                divs[j].style.display = "none";
+        }
+    }.bind(null, i));
+}
