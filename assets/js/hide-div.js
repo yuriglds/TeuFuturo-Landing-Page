@@ -7,13 +7,20 @@ btn.addEventListener('click', function(){
         div3.style.display = 'none'
         div2.style.display = 'none'
         div.style.display = 'none'
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
+
     }else{
         div4.style.display = 'none'
         div3.style.display = 'none'
         div2.style.display = 'none' 
         div.style.display = 'block'
-        
-        
+        btn.style.borderBottomColor = '#0066ff'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
   
     }
 
@@ -28,11 +35,20 @@ btn2.addEventListener('click', function(){
         div3.style.display = 'none'
         div2.style.display = 'none'
         div.style.display = 'none'
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
+
     }else{
         div4.style.display = 'none'
         div3.style.display = 'none'
         div2.style.display = 'block'
         div.style.display = 'none'
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#0066ff'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
         
     }
 })
@@ -46,14 +62,21 @@ btn3.addEventListener('click', function(){
         div3.style.display = 'none'
         div2.style.display = 'none'
         div.style.display = 'none'
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
 
     }else{
         div4.style.display = 'none'
         div3.style.display = 'block'
         div2.style.display = 'none'
         div.style.display = 'none'
-     
-        
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#0066ff'
+        btn4.style.borderBottomColor = '#7116F2'
+         
     }
 })
 
@@ -66,13 +89,20 @@ btn4.addEventListener('click', function(){
         div3.style.display = 'none'
         div2.style.display = 'none'
         div.style.display = 'none'
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#7116F2'
 
     }else{
         div4.style.display = 'block'
         div3.style.display = 'none'
         div2.style.display = 'none'
         div.style.display = 'none'
-     
-        
+        btn.style.borderBottomColor = '#7116F2'
+        btn2.style.borderBottomColor = '#7116F2'
+        btn3.style.borderBottomColor = '#7116F2'
+        btn4.style.borderBottomColor = '#0066ff'
+         
     }
 })
