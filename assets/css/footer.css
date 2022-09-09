@@ -53,8 +53,15 @@ footer a{
 
 }
 
+
+
 @media (max-width: 470px){
     .img-profile{
         width: 3em;
+    }
+}
+@media (max-width: 400px){
+    .img-profile{
+        width: 2.5em;
     }
 }
