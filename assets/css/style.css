@@ -142,32 +142,30 @@ span {
     color: #7116F2;
 }
 
-.button{
-    margin-top: 10em;
+.list-itens{
     border: none;
-    display: inline-block;
-    position: relative;
-    margin-bottom: 5em;
-    margin-left: 10%;
+    margin-left: 10px;
+    text-align: center;
     background-color: transparent;
     color: white;
-    border-bottom: #7116F2 solid;
+    border-bottom: solid #2771e0;
     
  }
 
- #list-itens1{
-    border-bottom: #0066ff solid;
- }
+ .list-itens:hover {
+    border-bottom: #7116F2 solid;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    transition: 0.5s;
+}
+
  .video-bg {
     width: 100%;
 
  }
 
-.button:hover{
-    border-bottom: solid #0066ff;
-    transition: 0.5s;
 
- }
 
 .hide-div{
     padding-top: 1em;
@@ -178,56 +176,18 @@ span {
     
  }
 
-<<<<<<< HEAD
- .show-div{
-    padding-top: 1em;
-    margin: 0 auto;
-    width: 70%;
-    padding-bottom: 5em;
-    
- }
- .show-div img{
-    width: 35%;
-	padding-top: 2em;
-    margin-bottom: 2em;
-	float: left;
-}
-=======
- #hide-iten1{
-    display: block;
- }
->>>>>>> b7845f9947ae84f5977a4d25143e6b6e369d9d79
-
 .hide-div img{
-    width: 35%;
+    width: 40%;
 	padding-top: 2em;
     margin-bottom: 2em;
 	float: left;
 }
 
-<<<<<<< HEAD
 .bg-video {
     width: 100%;
 }
 
 @media (max-width: 1155px){
-=======
-.lista {
-    color:white;
-    font-size: 20px;
-    counter-reset: item;
-    list-style-type: none;
-  }
-
-  @media (max-width: 1280px) {
-
-    .lateral-prodigy {
-        display: none;
-    }
- }
-
- @media (max-width: 1155px){
->>>>>>> b7845f9947ae84f5977a4d25143e6b6e369d9d79
     .div-button button{
         padding-right: 100px;
         font-size: 18px;
@@ -246,6 +206,8 @@ span {
         margin-top: 1em;
     }
 }
+
+
 
 
 
@@ -278,6 +240,13 @@ span {
 }
 
 
+.lista { 
+    color: white;
+    counter-reset: item;
+    list-style-type: none;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
@@ -294,6 +263,12 @@ span {
     .hide-mob {
       display: none;
       top: 200px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .lateral-prodigy {
+      display: none;
     }
   }
 
