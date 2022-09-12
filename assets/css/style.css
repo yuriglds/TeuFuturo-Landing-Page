@@ -1,4 +1,7 @@
 
+::-webkit-scrollbar {
+    display: none;
+}
 .logo {
     width: 50%;
 }
@@ -49,8 +52,25 @@ ul > li {
     border-bottom: 1px solid #7116F2;
 }
 
+.spec {
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
+
 h5 {
     color: white;
+}
+
+.btp {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+svg:hover {
+    fill:#7116F2;
+    transition: 0.5s;
 }
 .title {
     text-transform: uppercase;
@@ -165,6 +185,9 @@ span {
 
  }
 
+ .gabinete {
+    width: 100%;
+ }
 
 
 .hide-div{
@@ -208,9 +231,6 @@ span {
 }
 
 
-
-
-
 @media (max-width: 375px){
     .hide-div{
         margin-top: -5em;
@@ -239,6 +259,15 @@ span {
     }
 }
 
+.upper {
+    text-transform: uppercase;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
 
 .lista { 
     color: white;
@@ -285,7 +314,6 @@ span {
     }
   }
 
-  
 :target {
     scroll-margin-top: .8em;
   }

@@ -1,12 +1,20 @@
-/* transition menu */
+
+/*voltar ao topo*/
+var btn = $("#back-to-top");
+btn.click(function() {
+  $('html, body').animate({scrollTop:0}, 'slow');
+  
+});
+
+/* removing # of url */
 $('nav a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top,
         menuHeight = $('nav').innerHeight();
     $('html, body').animate({
-        scrollTop: targetOffset - menuHeight
-    }, 500);
+        scrollTop: targetOffset - menuHeight - 200
+    }, 200);
     
 });
 
@@ -23,7 +31,7 @@ window.addEventListener('resize', () => {
 });
     
     
-/* transition menu */
+/* hidden bg of menu */
 (function () {
     var menu = document.getElementById('menu');
     window.addEventListener('scroll', function () {
