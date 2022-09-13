@@ -198,15 +198,8 @@ span {
     right: 50px;
   }
 
-.back-to-top-block {
-    display: block;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}   
-
 .back-to-top-none {
-    display: none;
+    visibility: hidden;
     position: fixed;
     bottom: 50px;
     right: 50px;

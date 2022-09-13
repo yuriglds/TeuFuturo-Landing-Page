@@ -5,16 +5,19 @@ var btn = $("#back-to-top");
         
         });
 
-// (function () {
-//     var btn1 = document.getElementById('back-to-top');
-//         window.addEventListener('scroll', function () {
-//             if (window.scrollY > 10) {
-//                 btn1.classList.add('back-to-top-block');
-//             }else {
-//                 btn1.classList.add('back-to-top-none');
-//             }
-//         });
-// })();
+(function () {
+    var btn1 = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function () {
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (st > 10) {
+                btn1.classList.remove('back-to-top-none');
+            }else {
+                btn1.classList.add('back-to-top-none');
+            }
+        });
+        
+})();
 
 
 /* removing # of url */
