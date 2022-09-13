@@ -19,7 +19,11 @@
     <title>Prodigy - Razor</title>
   </head>
   <body class="body">
+    <!--fix mobile padding top-->
     <div id="topo" class=""></div>
+    <!--fix mobile padding top-->
+
+    <!--nav-->
     <nav class="navbar navbar-dark bg-dark fixed-top" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -40,23 +44,65 @@
             </li>
           </ul>
         </div>
-      </nav>
+    </nav>
+      <!--nav-->
+
     <main id="main">
-     <div class="hide-mob">
+
+      <!-- carrosel -->
+    <div class="hide-mob">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="assets/img/c1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-             <!-- <h1>Prodigy</h1>
-             <p>dê o melhor</p> -->
-            </div>
+            <div class="carousel-caption d-none d-md-block"></div>
           </div>
         </div>
       </div>
     </div>
-      <div class="container justify-content-center">
-        <!-- <img src="assets/img/prodigy-logo.svg" id="pl" class="lateral-prodigy" alt=""> -->
+    <!-- carrosel -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr" id="staticBackdropLabel">Contato</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label" >Nome</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ex: Fernando Posser">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="email@domain.com">
+                <div id="emailHelp" class="form-text">Digite seu melhor e-mail!</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Ex: +55 (51) 9999-9999">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check">
+                <label class="form-check-label" for="Check" >Aceito receber novidades por e-mail</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-outline-primary">Solicitar Orçamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->   
+
+    <div class="container justify-content-center">
+
+        <!-- section prodigy -->
         <section id="prodigy">
           <div class="row featurette">
             <div class="col-md-7">
@@ -67,47 +113,13 @@
             <div class="col-md-5">
               <img src="assets/img/img4.png" alt="Prodigy" class="mob">
             </div>
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="featurette-heading fw-normal lh-1 upper title-hr" id="staticBackdropLabel">Contato</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label" >Nome</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Fernando Posser">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">E-Mail</label>
-                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@domain.com">
-                  <div id="emailHelp" class="form-text">Digite seu melhor e-mail!</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Telefone</label>
-                  <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Ex: +55 (51) 9999-9999">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1" >Aceito receber novidades por e-mail</label>
-                </div>
-                <!--<button type="submit" class="btn btn-outline-primary">Enviar</button>-->
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-outline-primary">Solicitar Orçamento</button>
-            </div>
           </div>
-        </div>
-      </div>
-      <div>
-      <!-- Modal -->      
         </section>
+        <!-- section prodigy -->
+
         <hr class="featurette-divider">
+
+        <!-- section cpu-->
         <section id="cpu" class="anime">
           <div class="row featurette">
             <div class="col-md-7">
@@ -119,7 +131,11 @@
             </div>
           </div>
         </section>
-          <hr class="featurette-divider">
+        <!-- section cpu -->
+
+        <hr class="featurette-divider">
+
+        <!-- section gpu -->
         <section id="gpu" class="anime">
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
@@ -131,7 +147,11 @@
             </div>
           </div>
         </section>
+        <!-- section gpu -->
+
         <hr class="featurette-divider">
+
+        <!-- section specs -->
         <section id="specs" class="anime">
           <div class="row featurette text-center">
             <h1 class="featurette-heading fw-normal lh-1 upper spec">especificações</h1>
@@ -191,51 +211,55 @@
         </p>
       </div>
     </section>
+    <!-- section specs -->
+
     <hr class="featurette-divider">
+
+    <!-- section produto -->
     <section id="produto" class="anime">
       <div class="row featurette">
         <div class="col">
           <img src="assets/img/home-gabinete-img-removebg-preview.png" alt="Prodigy" class="gabinete mob">
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette anime">
         <hr class="featurette-divider">
-        <div class="col-md-7 order-md-2">
-          <h1 class="featurette-heading fw-normal lh-1 upper title-hr">o melhor</h1>
-          <p class="lead">
-          <strong>Menos RGB, mais performance.</strong>
-          <br>As nossas máquinas não lembram um pisca-pisca de Natal ou raladores de cozinha.
-          <br>Workstation Pro é lindo como todo computador tem que ser, discreto, com um design industrial e preparado para trabalhar.
-          </p>
-        </div>
+          <div class="col-md-7 order-md-2">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr">o melhor</h1>
+            <p class="lead">
+            <strong>Menos RGB, mais performance.</strong>
+            <br>As nossas máquinas não lembram um pisca-pisca de Natal ou raladores de cozinha.
+            <br>Workstation Pro é lindo como todo computador tem que ser, discreto, com um design industrial e preparado para trabalhar.
+            </p>
+          </div>
         <div class="col-md-5 order-md-2">
           <img src="assets/img/pc-yuri.png" alt="Prodigy" class="gabinete mob">
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette anime">
         <hr class="featurette-divider">
-        <div class="col-md-7 order-md-2">
-          <h1 class="featurette-heading fw-normal lh-1 upper title-hr">um pouco mais</h1>
-          <p class="lead">Preparado para o futuro! Desenvolvido especialmente para quem busca alta performance para o trabalho, o Workstation Razor Prodigy é robusto, seguro e expansível. Uma Workstation potente para aumentar a sua produtividade e o seu desempenho no dia a dia.</p>
-        </div>
+          <div class="col-md-7 order-md-2">
+            <h1 class="featurette-heading fw-normal lh-1 upper title-hr">um pouco mais</h1>
+            <p class="lead">Preparado para o futuro! Desenvolvido especialmente para quem busca alta performance para o trabalho, o Workstation Razor Prodigy é robusto, seguro e expansível. Uma Workstation potente para aumentar a sua produtividade e o seu desempenho no dia a dia.</p>
+          </div>
         <div class="col-md-5 order-md-1">
           <img src="assets/img/img2.png" alt="Prodigy" class="gabinete mob">
         </div>
       </div>
     </section>
-  </div>
+    <!-- section produto -->
 
-  <button id="back-to-top" class="btp">
+  </div> <!-- close container -->
+
+  <!-- Button back to top -->
+  <button id="back-to-top" class="btp ">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2771e0" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
     </svg>
   </button>
-  </main>
-  <script src="assets/js/animation.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="assets/js/hide-div.js"></script>
-  
+  <!-- Button back to top -->
+
+<!-- section about-->
 <section id="about">
   <footer class="text-center text-lg-start bg-dark text-muted">
     <hr class="cor">
@@ -287,17 +311,24 @@
             <p><a href="https://workstation.razor.com.br/" class="text-reset">Razor</a></p>
           </div>
         </div>
-
       </div>
-
   <hr class="cor">
   <div class="text-center p-4">
     © 2021 Copyright:
     <a class="text-reset fw-bold" href="">Squad 13 - Stranger Strings</a>
   </div>
-
 </footer>
 </section>
-   
-  </body>
+<!-- section about-->
+
+<!-- Javascript-->
+<script src="assets/js/animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/hide-div.js"></script> 
+<!-- Javascript-->
+
+</main>  <!-- close main-->
+
+</body>
 </html>

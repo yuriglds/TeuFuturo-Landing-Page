@@ -10,19 +10,6 @@ nav {
     background-color: transparent;
 }
 
-.prodigy-logo{
-    width: 50%;
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.foto {
-    border-radius: 50%;
-    width: 50px;
-}
-
-
 .prodigy {
     width: 50%;
 }
@@ -47,10 +34,6 @@ ul > li {
 
 #prodigy-title{
     margin-top: 50px;
-}
-
-.cpu-video {
-    width: 100%;
 }
 
 .title-hr {
@@ -78,6 +61,7 @@ svg:hover {
     fill:#7116F2;
     transition: 0.5s;
 }
+
 .title {
     text-transform: uppercase;
     font-size: 150px;
@@ -94,13 +78,6 @@ svg:hover {
     background: -webkit-linear-gradient(#2771e0, #7116F2,#000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.lateral-prodigy {
-    position: absolute;
-    left: 10px;
-    width: 70px;
-    top: 1200px;
 }
 
 p {
@@ -186,11 +163,6 @@ span {
     transition: 0.5s;
 }
 
- .video-bg {
-    width: 100%;
-
- }
-
  .gabinete {
     width: 100%;
  }
@@ -209,7 +181,6 @@ span {
     color: white;
  }
 
-
 .hide-div img{
     width: 40%;
 	padding-top: 2em;
@@ -217,9 +188,39 @@ span {
 	float: left;
 }
 
-.bg-video {
-    width: 100%;
+.upper {
+    text-transform: uppercase;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+
+.back-to-top-block {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}   
+
+.back-to-top-none {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.lista { 
+    color: white;
+    counter-reset: item;
+    list-style-type: none;
+}
+
+:target {
+    scroll-margin-top: .8em;
+  }
 
 @media (max-width: 1155px){
     .div-button button{
@@ -269,23 +270,6 @@ span {
     }
 }
 
-.upper {
-    text-transform: uppercase;
-}
-
-#back-to-top {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-  }
-
-.lista { 
-    color: white;
-    counter-reset: item;
-    list-style-type: none;
-}
-
-
 @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
@@ -322,9 +306,5 @@ span {
         font-size: 40px;
         color: white;
     }
-  }
-
-:target {
-    scroll-margin-top: .8em;
   }
 

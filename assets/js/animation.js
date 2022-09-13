@@ -1,10 +1,21 @@
-
-/*voltar ao topo*/
+/*back to top*/
 var btn = $("#back-to-top");
-btn.click(function() {
-  $('html, body').animate({scrollTop:0}, 'slow');
-  
-});
+        btn.click(function() {
+        $('html, body').animate({scrollTop:0}, 'slow');
+        
+        });
+
+// (function () {
+//     var btn1 = document.getElementById('back-to-top');
+//         window.addEventListener('scroll', function () {
+//             if (window.scrollY > 10) {
+//                 btn1.classList.add('back-to-top-block');
+//             }else {
+//                 btn1.classList.add('back-to-top-none');
+//             }
+//         });
+// })();
+
 
 /* removing # of url */
 $('nav a').click(function(e){
