@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/background.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <!-- Bootstrap CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Prodigy - Razor</title>
   </head>
@@ -26,7 +30,7 @@
               <a class="fw-bold nav-btn" href="#produto">Produto</a>
             </li>
             <li>
-              <a class="fw-bold nav-btn" href="#specs">Especs</a>
+              <a class="fw-bold nav-btn" href="#cpu">Especs</a>
             </li>
             <li>
               <a class="fw-bold nav-btn" href="#about">Sobre</a>
@@ -220,9 +224,7 @@
       </div>
     </section>
   </div>
-  <!-- <video autoplay loop muted playsinline class="bg-video">
-    <source src="assets/img/bg.mp4" type="video/mp4">
-  </video> -->
+
   <button id="back-to-top" class="btp">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2771e0" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
@@ -233,26 +235,69 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="assets/js/hide-div.js"></script>
-  <section id="about">
-    <footer>
-      <div class="iniciativa">
-        <p>Iniciativa:</p>
-        <a href="https://teufuturo.io/" target="_blank"><img class="img-iniciativa" src="assets/img/TeuFuturo.png" alt="logo teu futuro"></a>
-        <a href="https://razor.com.br/" target="_blank"><img class="img-iniciativa" src="assets/img/logo-razor.png" alt="logo teu futuro"></a>
+  
+<section id="about">
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <hr class="cor">
+      <div class="container text-center text-md-start mt-5">
+        <hr class="cor">
+        <div class="row">
+          <div class="col col-xl-3">
+            <h6 class="text-uppercase fw-bold mb-4">Projeto #TeuFuturo</h6>
+            <p>Um Projeto Landingpage patrocinado por #TeuFuturo e Razor</p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4 ">Equipe</h6>
+            <p>
+              <a href="https://www.linkedin.com/in/yuriglds/" class="text-reset">Yuri</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/gabrielsimor/" class="text-reset">Gabriel</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/clarissa-hermany-schmidt-296583222/" class="text-reset">Clarissa</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/rodrigo-gon%C3%A7alves-mendes-251948249/" class="text-reset">Rodrigo</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/lucasmarquesduarte/" class="text-reset">Lucas</a>
+            </p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links
+            </h6>
+            <p class="footer-hover">
+              <a href="#produto" class="text-reset">Produto</a>
+            </p>
+            <p class="footer-hover">
+              <a href="#specs" class="text-reset">Especificações</a>
+            </p>
+            <p class="footer-hover">
+              <a href="#about" class="text-reset">Sobre</a>
+            </p>
+            <p class="footer-hover">
+              <a class="text-reset" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contato</a>
+            </p>
+          </div>
+          <div class="col">
+            <h6 class="text-uppercase fw-bold mb-4">Razor</h6>
+            <p>Rua Dr. Plínio Moura, 153C<br>Vila Planaltina - 99062-340<br>Passo Fundo/RS</p>
+            <p><a href="https://workstation.razor.com.br/" class="text-reset">Razor</a></p>
+          </div>
+        </div>
+
       </div>
-      <div>
-        <p>Equipe:</p>
-        <a href="https://www.linkedin.com/in/gabrielsimor/" target="_blank"><img class="img-profile" src="assets/img/gabriel-profile.jpeg" alt="Perfil linkedin Gabriel"></a>
 
-        <a href="https://www.linkedin.com/in/yuriglds/" target="_blank"><img class="img-profile" src="assets/img/yuri-profile.jpeg" alt="Perfil linkedin Yuri"></a>
+  <hr class="cor">
+  <div class="text-center p-4">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="">Squad 13 - Stranger Strings</a>
+  </div>
 
-        <a href="https://www.linkedin.com/in/lucasmarquesduarte/" target="_blank"><img class="img-profile" src="assets/img/lucas-profile.png" alt="Perfil linkedin Lucas"><a>
-
-        <img class="img-profile" src="assets/img/rodrigo-profile.png" alt="">
-        <img class="img-profile" src="assets/img/clarissa-profile.jpeg" alt="">
-      </div>
-    </footer>
-  </section>
+</footer>
+</section>
    
   </body>
 </html>

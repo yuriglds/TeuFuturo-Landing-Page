@@ -17,6 +17,12 @@ nav {
     margin-bottom: 40px;
 }
 
+.foto {
+    border-radius: 50%;
+    width: 50px;
+}
+
+
 .prodigy {
     width: 50%;
 }
@@ -199,6 +205,11 @@ span {
     
  }
 
+ .cor {
+    color: white;
+ }
+
+
 .hide-div img{
     width: 40%;
 	padding-top: 2em;
@@ -217,7 +228,6 @@ span {
         width: 10%;
     }
 }
-
 
 @media (max-width: 767px){
     .button{
